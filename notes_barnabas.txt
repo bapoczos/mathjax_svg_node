@@ -1,0 +1,28 @@
+*** installation ***
+cd C:\Users\bapoczos\Dropbox\BarnabasCoding\MathJax\MathJax-node-master
+npm install
+
+npm install express
+npm install cors
+
+*******
+This will create a node_modules folder
+
+In the main.js file carefully set up the MathJaxPath, e.g.
+var MathJaxPath = url.resolve("file:///","file:"+"C:/Users/bapoczos/Dropbox/BarnabasCoding/MathJax/MathJax-node-master/node_modules/mathjax/MathJax.js");
+
+
+*************
+To run
+cd C:\Users\bapoczos\Dropbox\BarnabasCoding\MathJax\MathJax-node-master\test
+
+node svg-metadata.js
+
+then go to this link to check if it works:
+http://localhost:8080/?tex=a\times\int_c^d%20b\labelme{label_1}{\int_a^b f}
+
+It will create an svg group with label_1 label
+
+The results will be written into the Output.svg file
+
+
